@@ -1,9 +1,0 @@
-C:\Users\ciesl\source\repos\GifToPng\bin\Debug\GifToPng.exe.config
-C:\Users\ciesl\source\repos\GifToPng\bin\Debug\GifToPng.exe
-C:\Users\ciesl\source\repos\GifToPng\bin\Debug\GifToPng.pdb
-C:\Users\ciesl\source\repos\GifToPng\obj\Debug\GifToPng.csprojAssemblyReference.cache
-C:\Users\ciesl\source\repos\GifToPng\obj\Debug\GifToPng.Form1.resources
-C:\Users\ciesl\source\repos\GifToPng\obj\Debug\GifToPng.Properties.Resources.resources
-C:\Users\ciesl\source\repos\GifToPng\obj\Debug\GifToPng.csproj.GenerateResource.cache
-C:\Users\ciesl\source\repos\GifToPng\obj\Debug\GifToPng.exe
-C:\Users\ciesl\source\repos\GifToPng\obj\Debug\GifToPng.pdb
