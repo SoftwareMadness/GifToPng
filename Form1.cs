@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +57,7 @@ namespace GifToPng
             {
                 textBox1.Text = ofd.FileName;
             }
+            button1_Click(null, null);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -63,6 +66,26 @@ namespace GifToPng
             if(sf.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image.Save(sf.FileName, ImageFormat.Png);
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sf = new SaveFileDialog();
+            if (sf.ShowDialog() == DialogResult.OK)
+            {
+                File.WriteAllText(sf.FileName, "{animation:{}}");
+                Process.Start("notepad",sf.FileName);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sf = new SaveFileDialog();
+            if (sf.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image.Save(sf.FileName, ImageFormat.Png);
+                File.WriteAllText(Path.Combine(Path.GetDirectoryName(sf.FileName),Path.GetFileNameWithoutExtension(sf.FileName))+".mcmeta", "{animation:{}}");
             }
         }
     }
